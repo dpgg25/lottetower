@@ -1,0 +1,49 @@
+button {
+    cursor: pointer;
+    vertical-align: middle;
+    overflow: visible;
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+div {
+    content: "";
+}
+
+.header_logo {
+    position: fixed;
+    width: 100%;
+    max-width: 920px;
+    height: 90px;
+    top: 0;
+    left: 50%;
+}
+
+.header_logo .logo {
+    display: inline-block;
+    width: 360px;
+    height: 90px;
+    background: url(../img/layout/logo.png) 50% 50% no-repeat;
+    background-size: 320px auto;
+    overflow: hidden;
+}
+
+.btn_menu_open {
+    z-index: 1;
+    position: absolute;
+    width: 48px;
+    height: 48px;
+    right: 26px;
+    top: 20px;
+    background: #da291c url(../img/layout/btn_menu_open.png) no-repeat 50% 50%;
+    border-radius: 100%;
+    box-shadow: 0 6px 12px 0 rgb(103 6 0 / 19%);
+}
+
+.menu_quick .right {
+    top: 50%;
+    right: -130px;
+    margin-top: -10px;
+    width: 335px;
+}
