@@ -82,6 +82,7 @@ header .header_logo .logo {
 	right: -130px;
 	margin-top: -10px;
 	width: 335px;
+	opacity: 0.9;
 }
 .menu_quick .quick03, .menu_quick .quick04 {
 	padding-left: 26px;
@@ -129,3 +130,6 @@ header .header_logo .logo {
 	vertical-align: inherit;
 	color: #000;
 }
+/* .language ul li::marker {
+	color: #000;
+} */
