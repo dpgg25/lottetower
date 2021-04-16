@@ -6,13 +6,28 @@
 	<link rel="stylesheet" type="text/css" href="css/normalaize.css">
 	<link rel="stylesheet" type="text/css" href="css/reset.css">
 	<link rel="stylesheet" type="text/css" href="css/body.css">
+	<link rel="stylesheet" type="text/css" href="css/container.css">
 	<link rel="stylesheet" type="text/css" href="css/header.css">
 	<title>> LOTTE WORLD TOWER</title>
-	<script>
-		function myFunction() {
-			var clickMenu = document.getElementsByClassName("gnb_2nd");
-			clickMenu.style.display = "inline-block";
-		}
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>	
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$(".gnb_menu ul li > a").click(function(){
+				$(".gnb_menu .gnb_visual").addClass("blind");
+				$(".gnb_menu ul li").removeClass("on");
+				$(".gnb_menu ul li ul").hide(0);
+				$(this).parent("li").addClass("on");
+				$(this).next("ul").show(0);
+			});
+		});
+		
+		$(document).ready(function(){
+			$(".gnb_menu_wrap").hide();
+			$(".btn_menu_open").click(function(){		
+				$(".gnb_menu_wrap").toggle();
+				$(this).toggleClass("on");
+			});
+		});
 	</script>
 </head>
 <body class="main">
@@ -26,7 +41,7 @@
 		<!-- //logo -->
 
 		<!-- 메인메뉴열기버튼 -->
-		<button class="btn_menu_open">
+		<button class="btn_menu_open" onclick="myFunction()">
 			<span class="blind">메인메뉴보기</span>
 		</button>
 		<!-- //메인메뉴열기버튼 -->
@@ -42,7 +57,7 @@
 					</div>
 				</div>
 				<div class="gnb_menu">
-					<div class="gnb_visual blind">
+					<div class="gnb_visual">
 						<p>
 							롯데월드타워
 							<br>
@@ -200,5 +215,8 @@
 		</div>
 		<!-- //언어선택 -->
 	</header>
+	<div id="container" class="wrap_main">
+
+	</div>
 </body>
 </html>
