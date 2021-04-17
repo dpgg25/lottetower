@@ -31,13 +31,19 @@ table {
 
 
 .blind {
-    visibility: hidden;
-    text-indent: -10000px;
-    overflow: hidden;
+    visibility: hidden !important;
+    text-indent: -10000px !important;
+    overflow: hidden !important;
     position: absolute;
     top: 0;
     left: 0;
     width: 1px;
     height: 1px;
     margin: -1px;
+}
+
+.text_blind {
+  text-indent: -999999999px !important;
+  overflow: hidden !important;
+  font-size: 0 !important;
 }
