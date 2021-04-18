@@ -39,12 +39,94 @@
 .main_visual_wrap .main_content {
 	position: absolute;	
 	width: 230px;
-	top: 36%;
+	top: 50%;
 	right: 15px;
 	display: block;
 	transform: translateY(-50%);
+	-webkit-transform: translateY(-50%);
+	-moz-transform: translateY(-50%);
+	-o-transform: translateY(-50%);
+	-ms-transform: translateY(-50%);
 	border-top: 2px solid #333;
 }
+.main_content div {
+	height: 88px;
+	border-bottom: 1px solid #ccc;
+}
+.main_content .weather {
+	position: relative;
+	width: 100%;
+	padding: 14px 0;
+}
 .main_content .weather .ttl {
+	font-weight: bold;
+}
+.main_content .weather .ttl, .main_content .weather .temp {
+	display: inline-block;
+	width: calc(100% - 40px);
+	font-size: 16px;
+	line-height: 26px;
+}
+.main_content .weather .temp {
+	margin-top: 5px;
+}
+.main_content .ico_weather.sunny {	
+	position: absolute;
+	right: 0;
+	top: 50%;
+	transform: translateY(-50%);
+	-webkit-transform: translateY(-50%);
+	-moz-transform: translateY(-50%);
+	-o-transform: translateY(-50%);
+	-ms-transform: translateY(-50%);
+	width: 40px;
+	height: 40px;
+	background: 50% 50% no-repeat;
+	background-size: 40px auto;
+	background-image: url('../img/main/icon_weather_sunny.png');
+}
+.main_content .find_store {
+	border: none;
+}
+.main_content .find_store a {
+	display: inline-block;
+	width: 100%;
+	height: 100%;
+	line-height: 88px;
+	background-color: red;
+	font-size: 16px;
+	font-weight: bold;
+	background: url('../img/main/ico_search_store.png') right center no-repeat;
+	background-size: 40px auto;
+}
 
+/* 메인 배너 */
+.main_banner_wrap {
+	position: relative;
+	margin: -80px auto 0;
+	width: 920px;
+	height: 170px;
+	border-radius: 0 0 0 32px;
+}
+.main_banner_wrap::before {
+	content: '';
+	position: absolute;
+	display: inline-block;
+	width: 880px;
+	height: 20px;
+	bottom: -10px;
+	left: 20px;
+	border-radius: 0 0 0 32px;
+	opacity: 0.3;
+	filter: blur(9px);
+	background-color: #000;
+	z-index: -2;
+}
+.main_banner {
+	border-radius: 0 0 0 32px;
+}
+.main_banner_wrap .main_banner img {
+	width: 100%;
+	border-radius: 0 0 0 32px;
+	cursor: pointer;
 }
