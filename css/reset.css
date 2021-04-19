@@ -16,7 +16,8 @@ fieldset
 }
 
 img {
-  vertical-align: top;
+  vertical-align: middle;
+  border: 0;
 }
 
 a {
