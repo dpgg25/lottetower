@@ -48,3 +48,13 @@ table {
   overflow: hidden !important;
   font-size: 0 !important;
 }
+
+button {
+  cursor: pointer;
+  vertical-align: middle;
+  overflow: visible;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  background: 0;
+}

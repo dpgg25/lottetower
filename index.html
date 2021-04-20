@@ -240,8 +240,42 @@
 
 			<!--main banner-->
 			<div class="main_banner_wrap">
-				<div class="main_banner">
-					<img src="img/main/mb_500_10290694669.jpg" onclick="javascript:newin=window.open('about:blank');newin.location.href='https://www.lottemuseum.com/';" alt="김정기 전시 디아더사이드">
+				<div class="swiper-container main_banner swiper-container-horizontal">
+					<div class="swiper-wrapper">
+						<div class="swiper-slide" data-swiper-slide-index="1" tabindex="-1">
+							<!--class="swiper-slide swiper-slide-prev swiper-slide-duplicate-next" 
+							swiper-slide swiper-slide-duplicate swiper-slide-duplicate-active-->
+							<img src="img/main/mb_500_10290694669.jpg" alt="김정기 전시 <디아더사이드> 이천이십일년 사월 십육일부터 칠월 십일일까지 롯데뮤지엄">
+							<a href="https://www.lottemuseum.com/" alt="김정기 전시 <디아더사이드> 이천이십일년 사월 십육일부터 칠월 십일일까지 롯데뮤지엄" tabindex="-1" target="_blank"></a>
+						</div>
+						<div class="swiper-slide" data-swiper-slide-index="0" tabindex="-1">
+							<!--class="swiper-slide swiper-slide-prev swiper-slide-duplicate-next" 
+							swiper-slide swiper-slide-duplicate swiper-slide-duplicate-active-->
+							<img src="img/main/mb_seoul.jpg"
+								alt="매월 넷째주 수요일은 서울시 대중교통의 날">
+							<a href="javascript:void(0);" alt="매월 넷째주 수요일은 서울시 대중교통의 날" tabindex="-1"></a>
+						</div>
+					</div>
+					<div class="swiper-pagination swiper-pagination-fraction">
+						<span class="swiper-pagination-current">
+							1
+						</span>
+						<span class="swiper-pagination-total">2</span>
+					</div>
+					<button class="swiper-button-next" type="button">
+						<span class="a11y">이전 배너</span>
+					</button>
+					<button class="swiper-button-prev" type="button">
+						<span class="a11y">다음 배너</span>
+					</button>
+					<div class="btn_wrap">
+						<button class="start active">
+							배너 슬라이드 멈춤
+						</button>
+						<button class="stop">
+							배너 슬라이드 자동재생
+						</button>
+					</div>
 				</div>
 			</div>
 			<!--//main banner-->
@@ -277,7 +311,7 @@
 		<div class="main_bar"></div>
 
 		<!-- tower story swiper -->
-		<section class="tower_story">
+		<!-- <section class="tower_story">
 			<div class="swiper-container towers swiper-container-verical">
 				<div class="tower_story_title">롯데월드타워는?</div>
 				<div class="swiper-wrapper">
@@ -491,9 +525,18 @@
 				타워스토리
 				<em>바로가기</em>
 			</a>
-		</section>
+			<div class="main_bar"></div>
+		</section> -->
 
 		<div class="main_bar"></div>
+
+		<section class="social">
+			<p class="ttl">
+				# 더 다양한 소식을
+				<br>
+				&emsp;들려드릴게요.
+			</p>
+		</section>
 	</div>
 </body>
 </html>
