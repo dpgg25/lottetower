@@ -1,0 +1,76 @@
+section.event {
+	width: 100%;
+	height: 1080px;
+	padding-top: 150px;
+	background: url('../img/main/bg_event.jpg') center top no-repeat;
+	background-size: 100% 100%;
+}
+.event_wrap {
+	width: 100%;
+	max-width: 920px;
+	height: 100%;
+	margin: 0 auto;
+}
+.event_wrap .event_ttl {
+	position: relative;
+	width: 350px;
+}
+.event_wrap .event_ttl .ttl {
+	max-width: 234px;
+	font-size: 40px;
+	line-height: 52px;
+	font-weight: bold;
+	letter-spacing: -1.2px;
+}
+.event_wrap .event_ttl a {
+	position: absolute;
+	bottom: 150px;
+	font-size: 16px;
+	letter-spacing: -0.48px;
+	font-weight: 500;
+	color: #444;
+	left: auto;
+	transform: none;
+}
+.event_wrap .event_ttl, .event_wrap .event_list_wrap {
+	display: inline-block;
+	height: 100%;
+	vertical-align: top;
+}
+.event_list_wrap {
+	width: 560px;
+	overflow-y: hidden;
+	overflow-x: hidden;
+}
+.event_list_wrap .event_list {
+	padding-bottom: 30px;
+	margin-bottom: 30px;
+	position: relative;
+}
+.event_list_wrap .event_list .list_div {
+	position: absolute;
+	/* float: left; */
+	display: inline-block;
+	width: 260px;
+	margin-bottom: 30px;
+	border-radius: 16px;
+	background-color: #fff;
+	overflow: hidden;
+	box-sizing: border-box;
+}
+.event_list_wrap .event_list .list_div .a_block {
+    width: 100%;
+	display: block;
+}
+.event_list_wrap .event_list .list_div .a_block .thumb {
+	width: 100%;
+	height: auto;
+	min-height: 346px;
+	border-radius: 0;
+	border: none;
+	object-fit: cover;
+}
+.event_list_wrap .event_list .list_div .info_list_box {
+	padding: 30px;
+	margin-top: 0 impo !important;
+}
