@@ -1,8 +1,8 @@
 section.event {
 	width: 100%;
-	height: 1080px;
+	height: 1300px;
 	padding-top: 150px;
-	background: url('../img/main/bg_event.jpg') center top no-repeat;
+	background: url('../img/main/event/bg_event.jpg') center top no-repeat;
 	background-size: 100% 100%;
 }
 .event_wrap {
@@ -47,10 +47,13 @@ section.event {
 	margin-bottom: 30px;
 	position: relative;
 }
-.event_list_wrap .event_list .list_div {
-	position: absolute;
-	/* float: left; */
-	display: inline-block;
+.event_list_wrap .event_list .list_div.second_block {
+	position: relative;
+	top: -760px;
+	left: 290px;
+}
+.event_list_wrap .event_list .list_div {	
+	display: block;
 	width: 260px;
 	margin-bottom: 30px;
 	border-radius: 16px;
@@ -73,4 +76,32 @@ section.event {
 .event_list_wrap .event_list .list_div .info_list_box {
 	padding: 30px;
 	margin-top: 0 impo !important;
+}
+.event_list_wrap .event_list .list_div .info_list_box .info_logo {
+	margin-bottom: 4px;
+	font-size: 13px;
+	line-height: 19px;
+	font-weight: normal;
+}
+.shop_event {
+	color: #b78b61;
+}
+.info_list_box .info_tit {
+	margin-top: 16px;
+	margin-bottom: 12px;
+	font-size: 18px;
+	line-height: 24px;
+	color: #000;
+	font-weight: 500;
+}
+.info_list_box .info_place {
+	margin-bottom: 4px;
+	font-size: 14px;
+	line-height: 20px;
+	color: #666;
+}
+.info_list_box .info_time {
+	font-size: 14px;
+	line-height: 20px;
+	color: #666;
 }
