@@ -9,9 +9,9 @@
 	<link rel="stylesheet" type="text/css" href="css/header.css">	
 	<link rel="stylesheet" type="text/css" href="css/main_container.css">
 	<link rel="stylesheet" type="text/css" href="css/swiper.css">
-	<link rel="stylesheet" type="text/css" href="css/main_sns.css">
-	<link rel="stylesheet" type="text/css" href="css/main_event.css">
-	<link rel="stylesheet" type="text/css" href="css/main_oneday.css">
+	<link rel="stylesheet" type="text/css" href="css/main_sns_event.css">
+	<link rel="stylesheet" type="text/css" href="css/main_oneday_store.css">
+	<link rel="stylesheet" type="text/css" href="css/footer.css">
 	<title>> LOTTE WORLD TOWER</title>
 	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>	
 	<script type="text/javascript">
@@ -621,6 +621,7 @@
 
 		<div class="main_bar"></div>
 
+		<!--event-->
 		<section class="event">
 			<div class="event_wrap">
 				<div class="event_ttl">
@@ -765,9 +766,11 @@
 				</div>
 			</div>
 		</section>
+		<!--//event-->
 
 		<div class="main_bar"></div>
 
+		<!--oneday-->
 		<section class="oneday">
 			<p class="ttl">
 				탐나는 공간 레시피
@@ -810,9 +813,288 @@
 			</div>
 			<a href="#" class="btn_more_list">더보기</a>
 		</section>
+		<!--//oneday-->
 
 		<div class="main_bar"></div>
 
+		<!-- store -->
+		<section class="store_main">
+			<div class="ttl_wrap">
+				<p class="ttl">소개</p>
+				<div class="tab_scroll_wrap">
+					<ul class="tab" role="tablist" aria-label="Entertainment">
+						<li class="tab_cell">
+							<a href="#" role="tab" aria-selected="true" aria-controls="tab2" id="tabContent2" tabindex="-1">매장</a>
+						</li>
+						<li class="tab_cell">
+							<a href="#" role="tab" aria-selected="false" aria-controls="tab1" id="tabContent1" tabindex="-1">주요시설</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="tabs">
+				<div tabindex="0" rolde="tabpanel" id="tab1" aria-labelledby="tabContent1">
+					<div class="brand_link">
+						<ul>
+							<li>
+								<a href="#">
+									<span class="brand_name">시그니엘 레지던스</span>
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<span class="brand_name">포디엄</span>
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<span class="brand_name">쇼핑몰</span>
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<span class="brand_name">롯데면세점</span>
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<span class="brand_name">SKY31</span>
+								</a>
+							</li>
+							<li>								
+								<a href="#">
+									<span class="brand_name">에비뉴엘</span>
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div tabindex="0" rolde="tabpanel" id="tab2" aria-labelledby="tabContent2">
+					<div class="brand_link">
+						<ul>
+							<li>
+								<a href="#">
+									<span class="brand_name">고디바(초콜릿)</span>
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<span class="brand_name">디올</span>
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<span class="brand_name">세상의모든아침forME</span>
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<span class="brand_name">STAY</span>
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<span class="brand_name">꾸까 프리미엄</span>
+								</a>
+							</li>
+							<li>								
+								<a href="#">
+									<span class="brand_name">성수미술관</span>
+									<span class="ico_ad">
+										<img src="img/main/ico_new.png" alt="신규매장 아이콘">
+									</span>
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- //store -->
 	</div>
+
+	<footer>
+		<div class="wrap_footer">
+			<div class="tlt">Lotte World Tower Imagine New Korea</div>
+			<div class="partner_box">
+				<div class="list_corp">
+					<ul>
+						<li>
+							<a href="#" target="_blank">롯데물산 소개</a>
+						</li>
+						<li>
+							<a href="#" target="_blank">고객센터</a>
+						</li>
+						<li>
+							<a href="#" target="_blank">운영사 소개</a>
+						</li>
+						<li>
+							<a href="#" target="_blank">영업시간</a>
+						</li>
+						<li>
+							<a href="#" target="_blank">이용약관</a>
+						</li>
+						<li>
+							<a href="#" target="_blank">사이트맵</a>
+						</li>
+						<li>
+							<a class="text_b" href="#" target="_blank">개인정보처리방침</a>
+						</li>
+					</ul>
+				</div>
+				<div class="family_site">
+					<select title="패밀리사이트 선택" class="select2-single select2-hidden-accessible" id="fm" tabindex="-1" aria-hidden="true">
+						<option value data-select2-id="2">LOTTE FAMILY</option>
+						<option value="http://www.lotte.co.kr">롯데그룹</option>
+						<option value="http://www.lottepnd.com">롯데물산</option>
+						<optgroup label="롯데자산개발">
+							<option value="http://www.lottedevelop.com">&nbsp;- 롯데자산개발</option>
+							<option value="http://www.lottefitin.com">&nbsp;- 롯데피트인</option>
+						</optgroup>
+						<optgroup label="롯데백화점">
+							<option value="http://store.lotteshopping.com/handler/Main-Start?subBrchCd=001">&nbsp;- 롯데백화점</option>
+							<option value="http://www.ellotte.com">&nbsp;- 엘롯데</option>
+							<option value="http://store.lotteshopping.com/handler/Main-Start?subBrchCd=021">&nbsp;- 영플라자</option>
+							<option value="http://store.lotteshopping.com/handler/Main-Start?subBrchCd=054">&nbsp;- 프리미엄아울렛</option>
+							<option value="http://www.lotteoutlets.com">&nbsp;- 롯데아울렛</option>
+						</optgroup>
+						<optgroup label="롯데면세점">
+							<option value="http://kr.lottedfs.com">&nbsp;- 롯데면세점</option>
+							<option value="http://www.lottedfs.com/">&nbsp;- 롯데인터넷면세점</option>
+							<option value="http://www.busanlottedfs.com/">&nbsp;- 롯데부산인터넷면세점</option>
+						</optgroup>
+						<optgroup label="롯데마트">
+							<option value="http://www.lottemart.com">&nbsp;- 롯데마트</option>
+							<option value="http://company.lottemart.com/bc/main.do">&nbsp;- 롯데마트 홍보</option>
+							<option value="http://toysrus.lottemart.com/index.do">&nbsp;- 토이저러스</option>
+						</optgroup>
+						<optgroup label="롯데하이마트">
+							<option value="http://www.e-himart.co.kr/index.jsp">&nbsp;- 롯데하이마트</option>
+							<option value="http://www.himart.co.kr/index.jsp">&nbsp;- 롯데하이마트 홍보</option>
+						</optgroup>
+						<option value="http://www.lottecinema.co.kr">롯데시네마</option>
+						<optgroup label="롯데월드">
+							<option value="http://www.lotteworld.com/aquarium/index.asp">&nbsp;- 아쿠아리움</option>
+							<option value="http://www.lotteworld.com/index.asp">&nbsp;- 롯데월드</option>
+							<option value="http://www.lotteworld.com/waterpark/index.asp">&nbsp;- 워터파크</option>
+						</optgroup>
+						<optgroup label="롯데문화재단">
+							<option value="http://www.lotteconcerthall.com">&nbsp;- 롯데콘서트홀</option>
+						</optgroup>
+						<optgroup label="롯데제과">
+							<option value="http://www.lotteconf.co.kr">&nbsp;- 롯데제과</option>
+							<option value="http://www.lottehealth1.com">&nbsp;- 헬스원</option>
+							<option value="http://www.natuur.co.kr">&nbsp;- 나뚜루</option>
+						</optgroup>
+						<option value="http://www.lottelmsc.com">롯데유통사업본부</option>
+						<optgroup label="롯데칠성음료">
+							<option value="http://company.lottechilsung.co.kr">&nbsp;- 롯데칠성음료홍보</option>
+							<option value="http://mall.lottechilsung.co.kr">&nbsp;- 롯데칠성몰</option>
+						</optgroup>
+						<option value="http://www.lotteliquor.com/">롯데칠성주류</option>
+						<option value="http://www.lotteasahi.co.kr">롯데아사히주류</option>						
+						<optgroup label="롯데푸드">	
+							<option value="http://www.lottefoods.co.kr">&nbsp;-   롯데푸드</option>
+							<option value="http://www.pasteur.co.kr">&nbsp;-   파스퇴르</option>
+							<option value="http://www.pasteuri.com">&nbsp;-   파스퇴르아이</option>
+							<option value="http://www.pasteurmall.com">&nbsp;-   파스퇴르몰</option>
+							<option value="http://www.en-nature.co.kr">&nbsp;-   엔네이처</option>
+						</optgroup>
+						<optgroup label="롯데지알에스">	
+							<option value="http://www.lotteria.co.kr">&nbsp;-   롯데리아</option>
+							<option value="http://www.lotteriamall.com">&nbsp;-   롯데리아몰</option>
+							<option value="http://www.angelinus.co.kr">&nbsp;-   엔제리너스</option>
+							<option value="http://shop.angelinus.co.kr">&nbsp;-   엔제리너스몰</option>
+							<option value="http://www.tgif.co.kr">&nbsp;-   T.G.I.Friday's</option>
+							<option value="http://www.krispykreme.co.kr">&nbsp;-   크리스피크림도넛</option>
+						</optgroup>
+						<option value="http://www.lottesuper.co.kr">롯데슈퍼</option>
+						<option value="http://www.lotteimall.com">롯데홈쇼핑</option>
+						<option value="http://www.7-eleven.co.kr">코리아세븐</option>
+						<option value="https://store-kr.uniqlo.com/">유니클로</option>
+						<option value="http://www.muji.com/kr/">무인양품</option>
+						<option value="http://www.lotteintl.co.kr">롯데상사</option>
+						<option value="http://www.lotte.com">롯데닷컴</option>
+						<option value="http://www.lohbs.co.kr/main.do">H&amp;B(롭스)</option>
+						<option value="http://www.lottehotel.com">롯데호텔</option>
+						<option value="http://www.lottehotelbusan.com">부산롯데호텔</option>
+						<option value="https://www.lotteresortsokcho.com">롯데리조트 속초</option>
+						<option value="http://www.lottebuyeoresort.com">롯데리조트 부여</option>
+						<option value="http://www.lottejejuresort.com">롯데리조트 제주</option>
+						<option value="http://www.lottejtb.com">롯데제이티비</option>
+						<option value="https://www.lottechemical.com/kor/main/index.do">롯데케미칼</option>
+						<option value="http://www.kpchemtech.co.kr">케이피켐텍</option>
+						<option value="http://www.lottemcc.com">롯데엠시시</option>
+						<optgroup label="롯데건설">	
+							<option value="http://www.lottecon.co.kr">&nbsp;-   롯데건설</option>
+							<option value="http://www.lotteapt.net">&nbsp;-   롯데캐슬</option>
+						</optgroup>							
+						<option value="http://www.canon-bs.co.kr">캐논코리아 비즈니스솔루션</option>
+						<optgroup label="한국후지필름">	
+							<option value="http://www.fujifilm.co.kr">&nbsp;-   한국후지필름</option>
+							<option value="http://shop.fujifilm.co.kr">&nbsp;-   후지필름 쇼핑몰</option>
+						</optgroup>
+						<optgroup label="롯데알미늄">	
+							<option value="http://www.lotteal.co.kr">&nbsp;-   롯데알미늄</option>
+							<option value="http://www.lotteelife.co.kr">&nbsp;-   롯데이라이프</option>
+						</optgroup>							
+						<option value="http://www.lottelem.co.kr">롯데기공사업본부</option>
+						<option value="http://www.lottecard.co.kr">롯데카드</option>
+						<optgroup label="롯데손해보험">	
+							<option value="http://www.lotteins.co.kr">&nbsp;-   롯데손해보험</option>
+							<option value="http://www.3655.co.kr">&nbsp;-   롯데하우머치</option>
+						</optgroup>
+						<option value="http://www.lottecap.com">롯데캐피탈</option>
+						<option value="http://www.lpoint.com/">L.POINT</option>
+						<option value="http://www.ldcc.co.kr">롯데정보통신</option>
+						<option value="http://www.hit.co.kr">현대정보기술</option>
+						<option value="http://www.giantsclub.com">롯데자이언츠</option>
+						<option value="http://www.skyhill.co.kr">롯데스카이힐C.C</option>
+						<option value="http://www.daehong.com">대홍기획</option>
+						<option value="http://www.llc.co.kr">롯데로지스틱스</option>
+						<option value="http://www.lottepsnet.com">롯데피에스넷</option>
+						<option value="http://www.mybi.co.kr">마이비</option>
+						<option value="http://www.cashbee.co.kr">이비카드</option>
+						<option value="http://www.lotternd.com">롯데중앙연구소</option>
+						<option value="http://www.lotteacademy.co.kr/">롯데인개발원</option>
+						<optgroup label="롯데재단">	
+							<option value="http://www.lottefoundation.or.kr/introSchorlars.do">&nbsp;-   롯데장학재단</option>
+							<option value="http://www.lottefoundation.or.kr/introSocial.do">&nbsp;-   롯데복지재단</option>
+							<option value="http://www.lottefoundation.or.kr/introSamdong.do">&nbsp;-   롯데삼동복지재단</option>
+						</optgroup>
+						<option value="https://www.lotterentacar.net">롯데렌탈</option>
+						<option value="http://job.lotte.co.kr">롯데채용센터</option>
+					</select>
+					<span class="select2 select2-container select2-container--default select2-container--above" dir="ltr" data-select2-id="1" style="width: 495px;">
+						<span class="selection">
+							<button type="button" class="select2-selection select2-selection--single" role="combobox" aria-haspopup="true" aria-expanded="false" aria-label="콤보박스 리스트 열기" title="패밀리사이트 선택" tabindex="0" aria-labelledby="select2-fm-container">
+								<span class="select2-selection__rendered" id="select2-fm-container" role="textbox" aria-readonly="true" title="LOTTE FAMILY" aria-label="LOTTE FAMILY">LOTTE FAMILY</span>
+								<span class="select2-selection__arrow" role="presentation">
+									<b role="presentation"></b>
+								</span>
+							</button>
+						</span>
+						<span class="dropdown-wrapper" aria-hidden="true"></span>
+					</span>
+					<button type="button" class="ghost_btn footer_fmsite_btn">GO</button>
+				</div>
+				<div class="social_link_list"></div>
+			</div>
+			<div class="info">
+				<p>05551, 서울시 송파구 올림픽로 300(신천동 29)</p>
+				<p>02-3213-5000</p>
+				<p class="copyright">
+					COPYRIGHT LOTTE WORLD TOWER.
+					<br>
+					ALL RIGHTS RESERVED.
+				</p>
+			</div>
+			<div class="top_scroll_box">
+				<button type="button" class="top_scroll_btn active">
+					위로 올리기
+				</button>
+			</div>
+		</div>
+	</footer>
 </body>
 </html>

@@ -1,0 +1,134 @@
+footer {
+	display: block;
+	width: 100%;
+	max-width: 920px;
+	margin: 0 auto;
+	margin-top: 150px;
+	text-transform: uppercase;
+}
+footer .wrap_footer {
+	position: relative;
+	padding-top: 40px;
+	border-top: 1px solid #777;
+	display: inline-block;
+	width: 100%;
+	max-width: 920px;
+	margin-bottom: 93px;
+}
+footer .tlt {
+	display: inline-block;
+	width: 245px;
+	height: 72px;
+	margin-bottom: 90px;
+	font-size: 24px;
+	font-weight: 500;
+	font-stretch: normal;
+	font-style: normal;
+	line-height: 1.5;
+	letter-spacing: -0.72px;
+}
+footer .partner_box {
+	float: right;
+	width: 100%;
+	max-width: 540px;
+}
+footer .list_corp {
+	float: right;
+	text-align: left;
+	width: 100%;
+	margin-top: 6px;
+}
+footer .list_corp ul {
+	width: 100%;
+}
+footer .list_corp ul li {
+	text-align: left;
+	display: inline-block;
+	float: left;
+	width: 25%;
+	margin-bottom: 20px;
+}
+footer .list_corp ul li a {
+	font-size: 14px;
+	font-weight: normal;
+}
+footer .list_corp ul:after {
+	content: '';
+	display: block;
+	clear: both;
+}
+footer .list_corp a:hover {
+	text-decoration: underline;
+}
+.text_b {
+	font-weight: bold !important;
+}
+.family_site {
+	position: relative;
+	display: inline-block;
+	text-align: right;
+	width: 100%;
+	margin-top: 80px;
+	margin-bottom: 33px;
+	padding-right: 45px;
+}
+/* .select2-hidden-accessible {
+	border: 0 !important;
+	clip: rect(0 0 0 0) !important;
+	-webkit-clip-path: inset(50%) !important;
+	clip-path: inset(50%) !important;
+	height: 1px !important;
+	overflow: hidden !important;
+	padding: 0 !important;
+	position: absolute !important;
+	width: 1px !important;
+	white-space: nowrap !important;
+} */
+
+footer .info {
+    float: left;
+    font-size: 14px;
+}
+footer .info p {
+    font-size: 13px;
+    line-height: 20px;
+    color: #000;
+    font-weight: 400;
+    margin-bottom: 5px;
+}
+footer .info p.copyright {
+    padding-top: 20px;
+    font-size: 12px;
+    line-height: 18px;
+    color: #666;
+    letter-spacing: -0.26px;
+    font-weight: 300;
+}
+.top_scroll_box {
+    position: fixed;
+    right: 20px;
+    bottom: 37px;
+}
+.top_scroll_btn {
+    display: none;
+    text-indent: -9999px;
+    position: relative;
+    width: 40px;
+    height: 40px;
+    background: #f8f8f8;
+    border-radius: 50%;
+}
+.active {
+    display: block !important;
+}
+.top_scroll_btn:before {
+    content: '';
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    width: 17.2px;
+    height: 23.8px;
+    background: url('../img/main/ico_top_scroll_btn.png') no-repeat;
+    background-size: contain;
+}
