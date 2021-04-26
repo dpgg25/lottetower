@@ -133,17 +133,47 @@ footer .info p.copyright {
 	background-size: contain;
 }
 
+.family_site {
+	position: relative;
+	display: inline-block;
+	text-align: right;
+	width: 100%;
+	margin-top: 80px;
+	margin-bottom: 33px;
+	padding-right: 45px;
+}
+.select2-hidden-accessible {
+	border: 0 !important;
+	clip: rect(0 0 0 0) !important;
+	-webkit-clip-path: inset(50%) !important;
+	clip-path: inset(50%) !important;
+	height: 1px !important;
+	overflow: hidden !important;
+	padding: 0 !important;
+	position: absolute !important;
+	width: 1px !important;
+	white-space: nowrap !important;
+}
 .family_site .select2-container {
 	text-align: left;
 	max-width: 322px;
 }
+.select2-container {
+	width: 100% !important;
+	z-index: 0;
+	box-sizing: border-box;
+	display: inline-block;
+	margin: 0;
+	position: relative;
+	vertical-align: middle;
+}
 .select2-container .select2-selection--single {
-    box-sizing: border-box;
-    cursor: pointer;
-    display: block;
-    height: 28px;
-    user-select: none;
-    -webkit-user-select: none;
+	box-sizing: border-box;
+	cursor: pointer;
+	display: block;
+	height: 28px;
+	user-select: none;
+	-webkit-user-select: none;
 }
 .select2-container--default .select2-selection--single {
 	width: 100%;
@@ -180,8 +210,11 @@ footer .select2-container--default .select2-selection--single .select2-selection
 	transform: translate(-50%,-50%);
 	width: 16px;
 	height: 16px;
-	background: url(/img/main/ico_select_up.png) no-repeat;
+	background: url(../img/main/ico_select_up.png) no-repeat;
 	background-size: contain;
+	margin-left: -4px;
+	margin-top: -2px;
+	position: absolute;
 }
 .ghost_btn {
 	background: #fff;
@@ -202,4 +235,73 @@ footer .select2-container--default .select2-selection--single .select2-selection
 	position: absolute;
 	right: 0;
 	top: 0;
+}
+.select2-container--default .select2-results__option[aria-selected=true], .select2-container--default .select2-results__option--highlighted[aria-selected] {
+    background-color: #f5f5f5;
+    color: #da291c;
+}
+.select2-results {
+    display: block;
+}
+.select2-container--default .select2-results>.select2-results__options {
+    max-height: 200px;
+    overflow-y: auto;
+}
+.select2-container--default .select2-results__option[role=group] {
+    padding: 0;
+}
+.select2-results__option {
+    padding: 6px;
+    user-select: none;
+    -webkit-user-select: none;
+}
+.select2-results__options {
+    max-height: 320px !important;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.select2-container--default .select2-results__group {
+    cursor: default;
+    display: block;
+    padding: 6px;
+}
+.select2-results__option, .select2-container--default .select2-results__group {
+    padding: 10px 6px;
+}
+.select2-results__option[aria-selected] {
+    cursor: pointer;
+}
+.select2-container--default .select2-results__option .select2-results__option {
+    padding-left: 1em;
+}
+
+footer .social_link_list {
+	text-align: right;
+}
+.ico_sns {
+    display: inline-block;
+    width: 32px;
+    height: 32px;
+    border-radius: 100%;
+    background: #666 no-repeat 50% 50%;
+    text-align: center;
+}
+.ico_facebook {
+    background-image: url(../img/main/ico_sns_face.png);
+}
+.ico_blog {
+    background-image: url(../img/main/ico_sns_blog.png);
+}
+.ico_instar {
+    background-image: url(../img/main/ico_sns_instar.png);
+}
+.ico_youtube {
+    background-image: url(../img/main/ico_sns_youtube.png);
+}
+footer .social_link_list a {
+	margin-left: 16px;
+}
+footer .social_link_list .ico_sns {
+	background-size: 32px 32px;
 }

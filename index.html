@@ -1078,7 +1078,22 @@
 					</span>
 					<button type="button" class="ghost_btn footer_fmsite_btn">GO</button>
 				</div>
-				<div class="social_link_list"></div>
+				<!-- sns quick link -->
+				<div class="social_link_list">
+					<a href="https://www.facebook.com/lotteworldtower" target="_blank" class="ico_sns ico_facebook">
+						<span class="blind">facebook</span>
+					</a>
+					<a href="http://blog.naver.com/lotte_tower" target="_blank" class="ico_sns ico_blog">
+						<span class="blind">blog</span>
+					</a>
+					<a href="https://www.instagram.com/lotte_worldtower/" target="_blank" class="ico_sns ico_instar">
+						<span class="blind">instargram</span>
+					</a>
+					<a href="https://www.youtube.com/channel/UCvFkF8voBqKQlEyig5umyPA" target="_blank" class="ico_sns ico_youtube">
+						<span class="blind">youtube</span>
+					</a>
+				</div>
+				<!-- //sns quick link -->
 			</div>
 			<div class="info">
 				<p>05551, 서울시 송파구 올림픽로 300(신천동 29)</p>
@@ -1096,5 +1111,18 @@
 			</div>
 		</div>
 	</footer>
+	<script type="text/javascript">
+		function goNewSite(){
+			var site_url = document.getElementById("fm");
+			if(site_url.value != ""){
+				window.open(site_url.value);
+				return false;
+			}else{
+				alert("관련사이트를 선택해주십시오.");
+				site_url.focus();
+				return false;
+			}
+		}
+		</script>
 </body>
 </html>
