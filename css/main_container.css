@@ -1,11 +1,11 @@
 button {
-    cursor: pointer;
-    vertical-align: middle;
-    overflow: visible;
-    margin: 0;
-    padding: 0;
-    border: 0;
-    background: 0;
+	cursor: pointer;
+	vertical-align: middle;
+	overflow: visible;
+	margin: 0;
+	padding: 0;
+	border: 0;
+	background: 0;
 }
 .wrap_main {
 	width: 100%;
@@ -160,15 +160,15 @@ section {
 	z-index: -1;
 	display: flex;
 	display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
+	display: -webkit-flex;
+	display: -ms-flexbox;
 	-webkit-transition-property: -webkit-transform;
-    transition-property: -webkit-transform;
-    -o-transition-property: transform;
-    transition-property: transform;
-    transition-property: transform, -webkit-transform;
-    -webkit-box-sizing: content-box;
-    box-sizing: content-box;
+	transition-property: -webkit-transform;
+	-o-transition-property: transform;
+	transition-property: transform;
+	transition-property: transform, -webkit-transform;
+	-webkit-box-sizing: content-box;
+	box-sizing: content-box;
 }
 .main_banner .swiper-slide {
 	flex-shrink: 0;
@@ -207,31 +207,34 @@ section {
 }
 .main_banner_wrap .swiper-pagination > span {
 	display: inline-block;
-    vertical-align: middle;
+	vertical-align: middle;
 }
 .main_banner_wrap .swiper-pagination-current {
 	font-size: 14px;
-    font-weight: 500;
-    position: relative;
-    padding-right: 13px;
-    line-height: 20px;
+	font-weight: 500;
+	position: relative;
+	padding-right: 13px;
+	line-height: 20px;
 }
 .main_banner_wrap .swiper-pagination-current:before {
 	content: '';
-    position: absolute;
-    right: 6px;
-    top: 50%;
-    margin-top: 1px;
-    transform: translateY(-50%);
-    width: 1px;
-    height: calc(100% - 12px);
-    background-color: #fff;
-    opacity: .3;
-    transform: translateY(-50%);
+	position: absolute;
+	right: 6px;
+	top: 50%;
+	margin-top: 1px;
+	width: 1px;
+	height: calc(100% - 12px);
+	background-color: #fff;
+	opacity: .3;
+	transform: translateY(-50%);
+	-moz-transform: translateY(-50%);
+	-webkit-transform: translateY(-50%);
+	-ms-transform: translateY(-50%);
+	-o-transform: translateY(-50%);
 }
 .main_banner_wrap .swiper-pagination-total {
 	font-size: 14px;
-    line-height: 20px;
+	line-height: 20px;
 }
 .main_banner_wrap .swiper-button-prev, .main_banner_wrap .swiper-button-next {
 	width: 32px;
@@ -241,83 +244,77 @@ section {
 	transform: translateY(-50%);
 	z-index: 1;
 	position: absolute;
-    top: 50%;
+	top: 50%;
 	background-position: center;
-    background-repeat: no-repeat;
+	background-repeat: no-repeat;
 	background: none;
 }
 .main_banner_wrap .swiper-button-next {
-    right: 30px;
-    background-image: url(../img/main/btn_arrow_next.png);
+	right: 30px;
+	background-image: url(../img/main/btn_arrow_next.png);
 }
 .main_banner_wrap .swiper-button-prev {
-    left: 30px;
-    background-image: url(../img/main/btn_arrow_prev.png);
+	left: 30px;
+	background-image: url(../img/main/btn_arrow_prev.png);
 }
 .a11y {
 	position: absolute;
-    left: 0;
-    width: 0;
-    height: 0;
-    overflow: hidden;
-    clip: rect(1px, 1px, 1px, 1px);
+	left: 0;
+	width: 0;
+	height: 0;
+	overflow: hidden;
+	clip: rect(1px, 1px, 1px, 1px);
 }
 .main_banner_wrap .btn_wrap {
-    position: absolute;
-    bottom: 10px;
-    left: 50%;
-    z-index: 11;
-    margin-left: 20px;
+	position: absolute;
+	bottom: 10px;
+	left: 50%;
+	z-index: 11;
+	margin-left: 20px;
 }
 .main_banner_wrap .swiper-container .btn_wrap button {
-    color: #fff;
-    display: none;
-    /* background: rgba(0,0,0,0.3); */
-    border-radius: 50%;
+	color: #fff;
+	display: none;
+	/* background: rgba(0,0,0,0.3); */
+	border-radius: 50%;
 }
 .main_banner_wrap .swiper-container .btn_wrap .start {
-    text-indent: -9999px;
-    position: relative;
-    width: 15px;
-    height: 15px;
+	text-indent: -9999px;
+	position: relative;
+	width: 15px;
+	height: 15px;
 }
 .main_banner_wrap .swiper-container .btn_wrap .start:before {
-    content: '';
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%,-50%);
-    width: 7px;
-    height: 10px;
-    background: url(../img/main/ico_pause_img.png) no-repeat;
-    background-size: contain;
+	content: '';
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%,-50%);
+	width: 7px;
+	height: 10px;
+	background: url(../img/main/ico_pause_img.png) no-repeat;
+	background-size: contain;
 }
 .main_banner_wrap .swiper-container .btn_wrap .stop {
-    text-indent: -9999px;
-    position: relative;
-    width: 15px;
-    height: 15px;
+	text-indent: -9999px;
+	position: relative;
+	width: 15px;
+	height: 15px;
 }
 .main_banner_wrap .swiper-container .btn_wrap .stop:before {
-    content: '';
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%,-50%);
-    margin-left: 1px;
-    width: 8px;
-    height: 10px;
-    background: url(../imag/main/ico_play_img.png) no-repeat;
-    background-size: contain;
-}
-.main_banner_wrap .swiper-container .btn_wrap button {
-    color: #fff;
-    display: none;
-    background: rgba(0,0,0,0.3);
-    border-radius: 50%;
+	content: '';
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%,-50%);
+	margin-left: 1px;
+	width: 8px;
+	height: 10px;
+	background: url(../imag/main/ico_play_img.png) no-repeat;
+	background-size: contain;
 }
 .main_banner_wrap .swiper-container .btn_wrap button.active {
-    display: block !important;
+	display: block !important;
 }
 
 /*메인 정보*/
