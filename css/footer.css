@@ -109,6 +109,17 @@ footer .info p.copyright {
 	right: 20px;
 	bottom: 37px;
 }
+.top_scroll_btn:before {
+	content: '';
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%,-50%);
+	width: 17.2px;
+	height: 23.8px;
+	background: url('../img/main/ico_top_scroll_btn.png') no-repeat;
+	background-size: contain;
+}
 .top_scroll_btn {
 	display: none;
 	text-indent: -9999px;
@@ -120,17 +131,6 @@ footer .info p.copyright {
 }
 .active {
 	display: block !important;
-}
-.top_scroll_btn:before {
-	content: '';
-	position: absolute;
-	left: 50%;
-	top: 50%;
-	transform: translate(-50%,-50%);
-	width: 17.2px;
-	height: 23.8px;
-	background: url('../img/main/ico_top_scroll_btn.png') no-repeat;
-	background-size: contain;
 }
 
 .family_site {

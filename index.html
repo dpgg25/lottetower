@@ -3,17 +3,18 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" type="text/css" href="css/normalaize.css">
+	<link rel="stylesheet" type="text/css" href="css/normalize.css">
 	<link rel="stylesheet" type="text/css" href="css/reset.css">
 	<link rel="stylesheet" type="text/css" href="css/body.css">
 	<link rel="stylesheet" type="text/css" href="css/header.css">	
 	<link rel="stylesheet" type="text/css" href="css/main_container.css">
-	<link rel="stylesheet" type="text/css" href="css/swiper.css">
+	<!-- <link rel="stylesheet" type="text/css" href="css/swiper.css"> -->
 	<link rel="stylesheet" type="text/css" href="css/main_sns_event.css">
 	<link rel="stylesheet" type="text/css" href="css/main_oneday_store.css">
 	<link rel="stylesheet" type="text/css" href="css/footer.css">
 	<title>> LOTTE WORLD TOWER</title>
 	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>	
+
 	<script type="text/javascript">
 		$(document).ready(function(){
 			$(".gnb_menu ul li > a").click(function(){
@@ -32,6 +33,34 @@
 				$(this).toggleClass("on");
 			});
 		});
+
+		$(window).scroll(function() {
+			if ($(window).scrollTop() > 300) {
+				$('.top_scroll_btn').addClass('active');
+				$('.info_scroll').addClass('blind');
+			} else {
+				$('.info_scroll').removeClass('blind');
+				$('.top_scroll_btn').removeClass('active');
+			}
+		});
+
+		// 최상단으로 가기
+		$(function() {
+			$(window).scroll(function() {
+				if ($(this).scrollTop() > 500) {
+					$('.top_scroll_btn').fadeIn();
+				} else {
+					$('.top_scroll_btn').fadeOut();
+				}
+			});
+			
+			$(".top_scroll_btn").click(function() {
+				$('html, body').animate({
+					scrollTop : 0
+				}, 400);
+				return false;
+			});
+		});		
 	</script>
 </head>
 <body class="main">
@@ -315,7 +344,7 @@
 		<div class="main_bar"></div>
 
 		<!-- tower story swiper -->
-		<!-- <section class="tower_story">
+		<section class="tower_story">
 			<div class="swiper-container towers swiper-container-verical">
 				<div class="tower_story_title">롯데월드타워는?</div>
 				<div class="swiper-wrapper">
@@ -529,8 +558,7 @@
 				타워스토리
 				<em>바로가기</em>
 			</a>
-			<div class="main_bar"></div>
-		</section> -->
+		</section>
 
 		<div class="main_bar"></div>
 
@@ -1105,7 +1133,7 @@
 				</p>
 			</div>
 			<div class="top_scroll_box">
-				<button type="button" class="top_scroll_btn active">
+				<button type="button" class="top_scroll_btn" onclick="goTop()">
 					위로 올리기
 				</button>
 			</div>
@@ -1123,6 +1151,23 @@
 				return false;
 			}
 		}
-		</script>
+
+		// function scrollEvent(){
+		// 	ex.addEventListener('wheel',function(a){
+		// 		if(a.wheelDelta >= 0)
+		// 		{
+		// 			console.log('+');
+		// 		}else{
+		// 			console.log('-');
+		// 		}
+		// 	});
+		// 	ex.addEventListener('mousedown',function(event){
+		// 		console.log('mousedown');
+		// 	});
+		// 	ex.addEventListener('mouseup',function(event){
+		// 		console.log('mouseup');
+		// 	});
+		// };
+	</script>
 </body>
 </html>
