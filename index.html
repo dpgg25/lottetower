@@ -8,7 +8,8 @@
 	<link rel="stylesheet" type="text/css" href="css/body.css">
 	<link rel="stylesheet" type="text/css" href="css/header.css">	
 	<link rel="stylesheet" type="text/css" href="css/main_container.css">
-	<link rel="stylesheet" type="text/css" href="css/swiper.css">
+	<!-- <link rel="stylesheet" type="text/css" href="css/swiper.css"> -->
+	<link rel="stylesheet" type="text/css" href="css/swiper2.css">
 	<link rel="stylesheet" type="text/css" href="css/main_sns_event.css">
 	<link rel="stylesheet" type="text/css" href="css/main_oneday_store.css">
 	<link rel="stylesheet" type="text/css" href="css/footer.css">
@@ -343,10 +344,10 @@
 
 		<!-- tower story swiper -->
 		<section class="tower_story">
-			<div class="swiper-container towers twrPc swiper-container-verical">
+			<div class="swiper-container towers twrPc swiper-container-vertical" style="cursor: grab;">
 				<div class="tower_story_title">롯데월드타워는?</div>
 				<div class="swiper-wrapper">
-					<div class="swiper-slide swiper-slide-active">
+					<div class="swiper-slide swiper-slide-prev" style="height: 230px;">
 						<div class="progress">
 							<div class="progress_bar"></div>
 						</div>
@@ -354,7 +355,7 @@
 							<img src="img/main/swiper/img_tower_story_09.png" alt="">
 						</div>
 						<div class="title">124</div>
-						<div class="subtitle">
+						<div class="subtitle" style="transition-duration: 0ms; transform: translate3d(0px, -400px, 0px);">
 							<p>전기차 인프라</p>
 							<span>
 								건물 내부에 124개소의 전기차
@@ -365,7 +366,7 @@
 							</span>
 						</div>
 					</div>
-					<div class="swiper-slide swiper-slide-next">
+					<div class="swiper-slide swiper-slide-active" style="height: 230px;">
 						<div class="progress">
 							<div class="progress_bar"></div>
 						</div>
@@ -382,7 +383,7 @@
 							</span>
 						</div>
 					</div>
-					<div class="swiper-slide">
+					<div class="swiper-slide swiper-slide-next" style="height: 230px;">
 						<div class="progress">
 							<div class="progress_bar"></div>
 						</div>
@@ -390,7 +391,7 @@
 							<img src="img/main/swiper/img_tower_story_11.png" alt="">
 						</div>
 						<div class="title">850</div>
-						<div class="subtitle">
+						<div class="subtitle" style="transition-duration: 0ms; transform: translate3d(0px, 400px, 0px);">
 							<p>신재생 에너지</p>
 							<span>
 								이산화탄소 23,113t을 절감해
@@ -1131,12 +1132,13 @@
 				</p>
 			</div>
 			<div class="top_scroll_box">
-				<button type="button" class="top_scroll_btn" onclick="goTop()">
+				<button type="button" class="top_scroll_btn active" onclick="goTop()">
 					위로 올리기
 				</button>
 			</div>
 		</div>
 	</footer>
+
 	<script type="text/javascript">
 		function goNewSite(){
 			var site_url = document.getElementById("fm");

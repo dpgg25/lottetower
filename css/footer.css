@@ -129,6 +129,13 @@ footer .info p.copyright {
 	background: #f8f8f8;
 	border-radius: 50%;
 }
+.top_scroll_btn:hover {
+	background: #000;
+}
+.top_scroll_btn:hover:before {
+	background: url('../img/main/ico_top_scroll_btn_hover.png') no-repeat;
+	background-size: contain;
+}
 .active {
 	display: block !important;
 }

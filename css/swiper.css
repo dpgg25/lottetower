@@ -264,3 +264,35 @@
     background: url(../img/main/swiper/ico_play_img.png) no-repeat;
     background-size: contain;
 }
+
+.btn_tower_story {
+    position: absolute;
+    display: inline-block;
+    width: 230px;
+    height: 60px;
+    bottom: 0;
+    right: 20px;
+    padding: 18px;
+    background: #da291c;
+    border-radius: 0 0 0 16px;
+    color: #fff;
+    font-size: 16px;
+    line-height: 26px;
+    z-index: 1;
+    box-shadow: 0 16px 20px 0 rgb(0 0 0 / 16%);
+}
+.btn_tower_story:hover {
+    color: #fff;
+}
+.btn_tower_story em {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: 50%;
+    right: 17px;
+    transform: translateY(-50%);
+    background: url(../img/main/swiper/ico_tower_story.png)right 50% no-repeat;
+    background-size: 22px auto;
+    font-size: 0;
+}
